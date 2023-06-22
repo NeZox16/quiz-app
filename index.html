@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="icon" type="image/png" href="src/img/quiz.png"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/index.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-wrapper">
+            <h2 class="modal-wrapper__title">Game over</h2>
+            <p class="generated-completed-str"></p>
+            <p class="modal-wrapper__text">
+                <span class="correct-score"></span> / <span class="max-score"></span>
+            </p>
+            <button class="modal-wrapper__btn">Restart</button>
+        </div>
+    </div>
+    <div id="app" class="app">
+        <div class="app-wrapper">
+            <div class="question-range">
+                <div class="range"></div>
+                <p class="wer"><span class="rs"></span>/<span class="rsc"></span></p>
+            </div>
+            <h1 class="app-title">QUIZ GAME</h1>
+        </div>
+        <div class="form-app">
+            <h2 class="question-title"></h2>
+            <ul class="app__list">
+                <li data-id="0" class="app__list-item option1"></li>
+                <li data-id="1" class="app__list-item option2"></li>
+                <li data-id="2" class="app__list-item option3"></li>
+                <li data-id="3" class="app__list-item option4"></li>
+            </ul>
+            <button class="btn btn-next">Next</button>
+        </div>
+    </div>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
